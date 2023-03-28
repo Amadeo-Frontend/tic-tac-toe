@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo da velha</title>
+    <link
+      rel="shortcut icon"
+      href="./src/images/icons8-tic-tac-toe-64.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./dist/src/styles/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Jogo da velha</h1>
+      <table class="shadow">
+        <tr>
+          <td id="00"><span class="x"></span></td>
+          <td id="01"><span class="o"></span></td>
+          <td id="02"><span class="x"></span></td>
+        </tr>
+        <tr>
+          <td id="10"><span class="x"></span></td>
+          <td id="11"><span class="o"></span></td>
+          <td id="12"><span class="x"></span></td>
+        </tr>
+        <tr>
+          <td id="20"><span class="x"></span></td>
+          <td id="21"><span class="o"></span></td>
+          <td id="22"><span class="x"></span></td>
+        </tr>
+      </table>
+      <button class="button" onclick="resetBoard()">Reiniciar</button>
+      <p id="message"></p>
+    </div>
+
+    <script src="./src/scripts/main.js"></script>
+  </body>
+</html>
